@@ -68,9 +68,9 @@ kill-server:
 	@if [ $$(docker ps -a -q -f name=$(IMAGE) | wc -l) -ge 1 ]; then docker rm -f $(IMAGE); fi
 
 build:
-	@docker build -t 74734589924/$(IMAGE):13 .
+	@docker build -t 74734589924/$(IMAGE):14 .
 
 push:
-	@docker push 74734589924/$(IMAGE):13
+	@docker push 74734589924/$(IMAGE):14
 
 
